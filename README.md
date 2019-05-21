@@ -16,7 +16,6 @@
 ### 代理服务列表
 
 - https://douban.uieee.com
-- https://douban.now.sh
 - https://douban-api.now.sh
 - https://douban-api.zce.now.sh
 
