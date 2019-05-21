@@ -1,0 +1,30 @@
+{
+  "name": "douban-api-proxy",
+  "version": "0.1.0",
+  "description": "douban api proxy",
+  "homepage": "https://github.com/zce/douban-api-proxy#readme",
+  "bugs": {
+    "url": "https://github.com/zce/douban-api-proxy/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zce/douban-api-proxy.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "zce",
+    "email": "w@zce.me",
+    "url": "https://zce.me"
+  },
+  "main": "proxy.js",
+  "scripts": {
+    "lint": "standard",
+    "dev": "now dev"
+  },
+  "dependencies": {
+    "http-proxy": "^1.17.0"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"
+  }
+}

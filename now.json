@@ -1,0 +1,23 @@
+{
+  "name": "douban-api",
+  "version": 2,
+  "alias": [
+    "douban",
+    "douban-api"
+  ],
+  "env": {
+    "API_KEY": "@api-key"
+  },
+  "builds": [
+    { "src": "favicon.ico", "use": "@now/static" },
+    { "src": "index.html", "use": "@now/static" },
+    { "src": "proxy.js", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/favicon.ico", "dest": "/favicon.ico" },
+    { "src": "/index.html", "status": 301, "headers": { "Location": "/" } },
+    { "src": "/(.*)", "dest": "/proxy.js" }
+  ],
+  "regions": ["all"]
+}
