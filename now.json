@@ -2,7 +2,8 @@
   "name": "douban-api",
   "version": 2,
   "alias": [
-    "douban-api"
+    "douban-api",
+    "douban-api.uieee.com"
   ],
   "env": {
     "API_KEY": "@api-key"

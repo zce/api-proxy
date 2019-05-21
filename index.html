@@ -39,13 +39,14 @@
     </section>
 
     <section class="container">
-      <h2>我提供的代理</h2>
+      <h2>我个人提供的代理服务</h2>
       <ul>
         <li><a href="https://douban.uieee.com">https://douban.uieee.com</a></li>
+        <li><a href="https://douban-api.uieee.com">https://douban-api.uieee.com</a></li>
         <li><a href="https://douban-api.now.sh">https://douban-api.now.sh</a></li>
         <li><a href="https://douban-api.zce.now.sh">https://douban-api.zce.now.sh</a></li>
       </ul>
-      <p>每个代理限流：10000 次 / 1 小时，由于是豆瓣官方的限流，所以所有使用该地址的朋友都是共享这 10000 次请求的，我也没办法再去提高这个数字（普通个人用户是 100 次 / 1 小时），所以还是希望大家不要滥用。</p>
+      <p>每个代理限流：10000 次 / 1 小时，由于是豆瓣官方的限流，所以所有使用该地址的朋友都是共享这 10000 次请求的，我也没办法再去提高这个数字（普通个人用户是 100 次 / 1 小时），所以还是<strong>希望大家不要滥用</strong>。</p>
       <blockquote>
         <p>P.S. 我搭建的这个免费的服务中接口权限更高，可以使用影评、图书、音乐之类的接口，原因是我在代理请求的同时额外添加了一个 `apikey`（由于特殊原因就不公开这个 KEY 了）</p>
       </blockquote>
@@ -56,6 +57,7 @@
       <p>经过排查和摸索，豆瓣应该是根据 HTTP <code>Referer</code> 判断是否为小程序内发起的请求，所以我们<strong>通过反向代理的方式修改源请求中的 <code>Referer</code> 解决</strong>。</p>
       <p>至于有些朋友想在客户端直接修改请求 Referer 的话，我只能说不可能，你应该去补习一下基本功，给你一个链接：</p>
       <p><a href="https://fetch.spec.whatwg.org/#forbidden-header-name">Fetch forbidden header names</a></p>
+      <p>我的解决办法很简单：通过 Nginx 或者其他的代理方式中转一下，从而规避这个问题。</p>
     </section>
 
     <section class="container">
