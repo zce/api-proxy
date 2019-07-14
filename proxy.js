@@ -8,12 +8,14 @@ const proxy = httpProxy.createProxyServer({
 })
 
 proxy.on('proxyReq', (proxyReq, req, res, options) => {
+  /* eslint-disable node/no-deprecated-api */
   // append apikey
   let { query, pathname } = url.parse(proxyReq.path, true, true)
   query.apikey = query.apikey || process.env.API_KEY
   // trim trailing slash #19
   pathname = pathname.replace(/\/$/, '')
   proxyReq.path = url.format({ query, pathname })
+  /* eslint-enable */
 
   // change referer
   proxyReq.setHeader('referer', 'https://developers.douban.com')
