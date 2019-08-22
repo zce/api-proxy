@@ -307,15 +307,15 @@ escape-string-regexp@^1.0.5:
   resolved "https://registry.npm.taobao.org/escape-string-regexp/download/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-eslint-config-standard-jsx@~8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-standard-jsx/-/eslint-config-standard-jsx-8.0.0.tgz#62607f2a7c0c47aed46d3a37ad7ebc73b6f7e869"
-  integrity sha512-Abs/WP+638KfkHI1J961yAztpMhYFvEMTqD4GMUZObAO9yOmLaQZlJY6xke1ty1+zhY4G58AuvHo3ht6avAEVQ==
+eslint-config-standard-jsx@8.0.1:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-standard-jsx/-/eslint-config-standard-jsx-8.0.1.tgz#987bdeb063f0bfbd1de55300b02fdd220c94a68a"
+  integrity sha512-SDnpVLSzTcT0eLNTG7s8ffRi3WadBBpw+pFsiBj4BcrHOFOga9O/7mjtNRyPgetmsiDPWGxsiS4UdJLZhaIukA==
 
-eslint-config-standard@~14.0.0:
-  version "14.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-standard/-/eslint-config-standard-14.0.0.tgz#1de7bf5af37542dc6eef879ab7eb5e5e0f830747"
-  integrity sha512-bV6e2LFvJEetrLjVAy4KWPOUsIhPWr040c649MigTPR6yUtaGuOt6CEAyNeez2lRiC+2+vjGWa02byjs25EB3A==
+eslint-config-standard@14.0.1:
+  version "14.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-standard/-/eslint-config-standard-14.0.1.tgz#375c3636fb4bd453cb95321d873de12e4eef790b"
+  integrity sha512-1RWsAKTDTZgA8bIM6PSC9aTGDAUlKqNkYNJlTZ5xYD/HYkIM6GlcefFvgcJ8xi0SWG5203rttKYX28zW+rKNOg==
 
 eslint-import-resolver-node@^0.3.2:
   version "0.3.2"
@@ -1386,14 +1386,14 @@ standard-engine@^12.0.0:
     minimist "^1.1.0"
     pkg-conf "^3.1.0"
 
-standard@14.0.0:
-  version "14.0.0"
-  resolved "https://registry.yarnpkg.com/standard/-/standard-14.0.0.tgz#72c1bedb9d24e04ab96adde98b44a512dc109d0f"
-  integrity sha512-FNKr9wkXQYvqO1txmileQm+r3+NBJp/H+yF1x9Ak3kZgLh3xrmc5HDyiKWizMEekbffBC7yq+PuB8+GMuRp8Vg==
+standard@14.0.2:
+  version "14.0.2"
+  resolved "https://registry.yarnpkg.com/standard/-/standard-14.0.2.tgz#840d70f3f202981fd1719066b4ec75e21e167144"
+  integrity sha512-2Rjsc+B1zaXiQVfUlH7n+ZIrCpxxAaVEItps2lBQUQLuyCH/Vc788w6q16PMK4ezPA61jm8A1vzBnBwcokGOgQ==
   dependencies:
     eslint "~6.1.0"
-    eslint-config-standard "~14.0.0"
-    eslint-config-standard-jsx "~8.0.0"
+    eslint-config-standard "14.0.1"
+    eslint-config-standard-jsx "8.0.1"
     eslint-plugin-import "~2.18.0"
     eslint-plugin-node "~9.1.0"
     eslint-plugin-promise "~4.2.1"
