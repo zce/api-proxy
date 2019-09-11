@@ -25,6 +25,6 @@
     "http-proxy": "^1.17.0"
   },
   "devDependencies": {
-    "standard": "14.1.0"
+    "standard": "14.2.0"
   }
 }
