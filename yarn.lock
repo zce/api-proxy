@@ -1300,10 +1300,10 @@ standard-engine@^12.0.0:
     minimist "^1.1.0"
     pkg-conf "^3.1.0"
 
-standard@14.3.0:
-  version "14.3.0"
-  resolved "https://registry.yarnpkg.com/standard/-/standard-14.3.0.tgz#0c650fba1ee0cdacf109d91c68f3b837507d6d82"
-  integrity sha512-F3Su3IAxDrOW+v4O/WiPFp6SZ0FWj+H4NEtGrEI1iaCf5LWD0nIfcXh0GIyKQgpmswQFWBIAvgONihT8U5UM4w==
+standard@14.3.1:
+  version "14.3.1"
+  resolved "https://registry.yarnpkg.com/standard/-/standard-14.3.1.tgz#f6a5d9244fbb6b76d0c2dbcc1048a03c863038b6"
+  integrity sha512-TUQwU7znlZLfgKH1Zwn/D84FitWZkUTfbxSiz/vFx+4c9GV+clSfG/qLiLZOlcdyzhw3oF5/pZydNjbNDfHPEw==
   dependencies:
     eslint "~6.4.0"
     eslint-config-standard "14.1.0"
