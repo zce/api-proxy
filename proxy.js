@@ -21,6 +21,17 @@ proxy.on('proxyReq', (proxyReq, req, res, options) => {
   proxyReq.setHeader('referer', 'https://developers.douban.com')
 })
 
+proxy.on('proxyRes', (proxyRes, req, res) => {
+  // CORS Support
+  if (req.headers.origin) {
+    res.setHeader('access-control-allow-credentials', true)
+    res.setHeader('access-control-allow-origin', req.headers.origin)
+    res.setHeader('access-control-allow-methods', 'GET, POST, PUT, PATCH, DELETE, OPTIONS')
+    res.setHeader('access-control-allow-headers', 'Authorization, Content-Type, Accept, Origin, User-Agent, DNT, Cache-Control, X-Mx-ReqToken, X-Requested-With')
+    res.setHeader('access-control-max-age', 86400)
+  }
+})
+
 // proxy.on('proxyRes', (proxyRes, req, res) => {
 //   proxyRes.set('Access-Control-Allow-Origin', '*');
 //   proxyRes.set('Access-Control-Allow-Methods', 'GET');
