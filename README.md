@@ -15,8 +15,8 @@
 
 ### 接口地址：
 
-- https://douban.uieee.com （支持 HTTP / HTTPS）
-- https://douban-api.uieee.com
+- https://douban.uieee.com （支持 HTTP / HTTPS，已备案）
+- https://douban-api.uieee.com （已备案）
 - https://douban-api.now.sh
 - https://douban-api.zce.now.sh
 - https://douban-api-git-master.zce.now.sh
