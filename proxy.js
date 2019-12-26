@@ -2,7 +2,7 @@ const url = require('url')
 const httpProxy = require('http-proxy')
 
 const proxy = httpProxy.createProxyServer({
-  target: 'http://api.douban.com',
+  target: 'https://api.douban.com',
   changeOrigin: true,
   secure: false
 })
