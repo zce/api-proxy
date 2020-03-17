@@ -18,6 +18,5 @@
     { "src": "/favicon.ico", "dest": "/favicon.ico" },
     { "src": "/index.html", "status": 301, "headers": { "Location": "/" } },
     { "src": "/(.*)", "dest": "/proxy.js" }
-  ],
-  "regions": ["all"]
+  ]
 }
