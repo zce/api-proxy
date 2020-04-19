@@ -75,7 +75,7 @@ server {
 
 ### Node Proxy
 
-我这里使用的是 ZEIT Now Lambdas (Serverless)
+我这里使用的是 ZEIT Now Lambdas (Serverless Functions)
 
 [Source file](proxy.js)
 
