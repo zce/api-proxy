@@ -22,7 +22,7 @@
     "dev": "now dev"
   },
   "dependencies": {
-    "http-proxy": "^1.17.0"
+    "http-proxy": "^1.18.0"
   },
   "devDependencies": {
     "standard": "14.3.3"
