@@ -3,6 +3,7 @@
   "version": 2,
   "alias": [
     "douban-api",
+    "douban.uieee.com",
     "douban-api.uieee.com"
   ],
   "env": {
