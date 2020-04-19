@@ -15,7 +15,7 @@
 
 ### 接口地址：
 
-- https://douban.uieee.com （支持 HTTP / HTTPS，已备案）
+- https://douban.uieee.com （已备案）
 - https://douban-api.uieee.com （已备案）
 - https://douban-api.now.sh
 - https://douban-api.zce.now.sh
@@ -69,13 +69,13 @@ server {
 }
 ```
 
-[Source file](douban.uieee.com.conf)
+[Source file](nginx.conf)
 
 注意：你需要将域名和 SSL 证书换成自己的域名和对应的证书！如果你有域名你可以去申请免费的证书（letsencrypt、aliyun 都可以提供）。
 
 ### Node Proxy
 
-我这里使用的是 ZEIT Now Lambdas
+我这里使用的是 ZEIT Now Lambdas (Serverless)
 
 [Source file](proxy.js)
 
@@ -101,4 +101,4 @@ server {
 [devdependency-image]: https://img.shields.io/david/dev/zce/douban-api-proxy.svg
 [devdependency-url]: https://david-dm.org/zce/douban-api-proxy?type=dev
 [style-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
-[style-url]: http://standardjs.com/
+[style-url]: https://standardjs.com/
