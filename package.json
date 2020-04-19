@@ -19,7 +19,7 @@
   "main": "proxy.js",
   "scripts": {
     "lint": "standard",
-    "dev": "now dev"
+    "dev": "npx now dev"
   },
   "dependencies": {
     "http-proxy": "^1.18.0"
