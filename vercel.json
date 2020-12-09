@@ -1,23 +1,8 @@
 {
-  "name": "douban-proxy",
-  "version": 2,
-  "alias": [
-    "douban-api",
-    "douban.uieee.com",
-    "douban-api.uieee.com"
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/proxy" }
   ],
-  "env": {
-    "API_KEY": "@api-key"
-  },
-  "builds": [
-    { "src": "favicon.ico", "use": "@now/static" },
-    { "src": "index.html", "use": "@now/static" },
-    { "src": "proxy.js", "use": "@now/node" }
-  ],
-  "routes": [
-    { "src": "/", "dest": "/index.html" },
-    { "src": "/favicon.ico", "dest": "/favicon.ico" },
-    { "src": "/index.html", "status": 301, "headers": { "Location": "/" } },
-    { "src": "/(.*)", "dest": "/proxy.js" }
+  "redirects": [
+    { "source": "/index.html", "destination": "/" }
   ]
 }

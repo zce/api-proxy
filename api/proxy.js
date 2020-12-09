@@ -32,20 +32,10 @@ proxy.on('proxyRes', (proxyRes, req, res) => {
   }
 })
 
-// proxy.on('proxyRes', (proxyRes, req, res) => {
-//   proxyRes.set('Access-Control-Allow-Origin', '*');
-//   proxyRes.set('Access-Control-Allow-Methods', 'GET');
-//   proxyRes.set('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type');
-// })
-
 proxy.on('error', (err, req, res) => {
-  console.error(err)
-
+  // console.error(err)
   res.writeHead(500, { 'Content-Type': 'text/plain' })
-
   res.end('Something went wrong. And we are reporting a custom error message.')
 })
 
-module.exports = (req, res) => {
-  proxy.web(req, res)
-}
+module.exports = proxy.web.bind(proxy)

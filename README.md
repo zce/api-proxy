@@ -6,10 +6,12 @@
 [![Code Style][style-image]][style-url]
 
 > 一个豆瓣 API 的反向代理配置，旨在解决豆瓣屏蔽小程序请求问题
+## 特别提醒
+
+由于一些不可抗力，我不得不关停以下[「公益」服务](#免费服务)，各位自己[想办法](#解决方案（原理）)～
 
 ## 免费服务
 
-> 由于一些不可抗力，我不得不关停以下「公益」服务，各位自己想办法～
 > **注意：搜索接口由于官方问题暂时无法正常工作**
 
 为了帮助更多初学者或是爱好者，我个人准备了一个反向代理服务器（免费开放）。希望各位珍惜资源切勿滥用，谢谢！
@@ -24,7 +26,9 @@
 
 ### 接口文档：
 
-由于是直接转发官方的接口，所以完全跟官方的接口相同，文档参考官方即可：~~https://developers.douban.com/wiki/?title=api_v2~~ （最近官方文档关停，我重新整理了一份，往下看）
+由于是直接转发官方的接口，所以完全跟官方的接口相同，文档参考官方即可：~~https://developers.douban.com/wiki/?title=api_v2~~
+
+最近官方文档关停，我重新整理了一份，[往下看](#豆瓣-API-文档)
 
 ### 接口限流说明：
 
@@ -76,9 +80,26 @@ server {
 
 ### Node Proxy
 
-我这里使用的是 Vercel Serverless Functions
+我这里使用的是 Vercel Serverless Functions。
 
 [Source file](proxy.js)
+
+#### 本地测试
+
+请确保提前安装 Node.js LTS/* 版本。
+
+```shell
+# clone repo
+$ git clone https:/github.com/zce/douban-api-proxy.git
+
+$ cd douban-api-proxy
+
+# install dependencies
+$ npm install
+
+# run local server
+$ npm start
+```
 
 ## 豆瓣 API 文档
 
