@@ -33,9 +33,8 @@ proxy.on('proxyRes', (proxyRes, req, res) => {
 })
 
 proxy.on('error', (err, req, res) => {
-  // console.error(err)
   res.writeHead(500, { 'Content-Type': 'text/plain' })
-  res.end('Something went wrong. And we are reporting a custom error message.')
+  res.end('Something went wrong. And we are reporting a custom error message: ' + err.message)
 })
 
 module.exports = proxy.web.bind(proxy)
