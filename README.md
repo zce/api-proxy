@@ -9,6 +9,7 @@
 
 ## 免费服务
 
+> 由于一些不可抗力，我不得不关停以下「公益」服务，各位自己想办法～
 > **注意：搜索接口由于官方问题暂时无法正常工作**
 
 为了帮助更多初学者或是爱好者，我个人准备了一个反向代理服务器（免费开放）。希望各位珍惜资源切勿滥用，谢谢！
@@ -75,7 +76,7 @@ server {
 
 ### Node Proxy
 
-我这里使用的是 ZEIT Now Lambdas (Serverless Functions)
+我这里使用的是 Vercel Serverless Functions
 
 [Source file](proxy.js)
 
